@@ -9,9 +9,6 @@
 // sun has multiple owners.
 //
 // Execute `rustlings hint rc1` or use the `hint` watch subcommand for a hint.
-
-// I AM NOT DONE
-
 use std::rc::Rc;
 
 #[derive(Debug)]

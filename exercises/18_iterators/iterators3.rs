@@ -9,8 +9,6 @@
 // Execute `rustlings hint iterators3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
-
 #[derive(Debug, PartialEq, Eq)]
 pub enum DivisionError {
     NotDivisible(NotDivisibleError),
@@ -22,19 +20,6 @@ pub struct NotDivisibleError {
     dividend: i32,
     divisor: i32,
 }
-
-/*
-impl Cloned for DivisionError {
-    fn cloned(&self) -> Cloned<DivisionError> {
-        match self {
-            DivideByZero => DivisionError::DivideByZero,
-            NotDivisible => NotDivisible(NotDivisibleError {
-                dividend: self.dividend,
-                divisor: self.divisor,
-            }),
-        }
-    }
-}*/
 
 // Calculate `a` divided by `b` if `a` is evenly divisible by `b`.
 // Otherwise, return a suitable error.
